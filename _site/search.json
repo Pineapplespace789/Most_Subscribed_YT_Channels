@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Top YouTube Channels",
+    "section": "",
+    "text": "This data science project delves into the analysis of the top YouTube channels based on subscriber count and content volume as of June 2024. Utilizing a comprehensive dataset from Kaggle, the project identifies the leading channels and explores various metrics such as subscriber numbers and video counts. By employing data visualization techniques, the project highlights trends and patterns that contribute to the success of these channels, providing insights into the dynamics of digital content creation and audience engagement. The findings offer valuable information for content creators, marketers, and researchers interested in understanding the factors driving the popularity of top YouTube influencers."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hello, My name is SriRitvik Yellamilli and I am a high school student in Illinois.\nGithub account: https://github.com/Pineapplespace789"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About",
+    "section": "",
+    "text": "Hello, My name is SriRitvik Yellamilli and I am a high school student in Illinois.\nGithub account: https://github.com/Pineapplespace789"
+  },
+  {
+    "objectID": "about.html#about-this-project",
+    "href": "about.html#about-this-project",
+    "title": "About",
+    "section": "About This Project",
+    "text": "About This Project\nFind the Github repository here: https://github.com/Pineapplespace789/Most_Subscribed_YT_Channels\nThis project was created as a part of Kane’s Data Science Bootcamp.\nhttps://bootcamp.davidkane.info/\nThese were the resources/sources I used to complete this project.\nhttps://chatgpt.com & Kaggle - YouTube’s Most Subscribed Channels"
+  },
+  {
+    "objectID": "index.html#summary",
+    "href": "index.html#summary",
+    "title": "Top YouTube Channels",
+    "section": "",
+    "text": "This data science project delves into the analysis of the top YouTube channels based on subscriber count and content volume as of June 2024. Utilizing a comprehensive dataset from Kaggle, the project identifies the leading channels and explores various metrics such as subscriber numbers and video counts. By employing data visualization techniques, the project highlights trends and patterns that contribute to the success of these channels, providing insights into the dynamics of digital content creation and audience engagement. The findings offer valuable information for content creators, marketers, and researchers interested in understanding the factors driving the popularity of top YouTube influencers."
+  },
+  {
+    "objectID": "index.html#most-subscribed-youtube-channels",
+    "href": "index.html#most-subscribed-youtube-channels",
+    "title": "Top YouTube Channels",
+    "section": "Most Subscribed YouTube Channels",
+    "text": "Most Subscribed YouTube Channels"
+  }
+]

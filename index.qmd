@@ -1,0 +1,58 @@
+---
+title: "Top YouTube Channels"
+author: SriRitvik Yellamilli
+execute: 
+  echo: false
+  warning: false
+  message: false
+---
+## Summary
+This data science project delves into the analysis of the top YouTube channels based on subscriber count and content volume as of June 2024. Utilizing a comprehensive dataset from [Kaggle](https://www.kaggle.com/datasets/ritiksharma07/top-500-most-subscribed-youtube-channels-june24), the project identifies the leading channels and explores various metrics such as subscriber numbers and video counts. By employing data visualization techniques, the project highlights trends and patterns that contribute to the success of these channels, providing insights into the dynamics of digital content creation and audience engagement. The findings offer valuable information for content creators, marketers, and researchers interested in understanding the factors driving the popularity of top YouTube influencers.
+
+## Most Subscribed YouTube Channels
+```{r}
+#| label: setup
+library(tidyverse)
+library(dplyr)
+
+# Reading CSV File
+youtube_data <- read_csv("C:/Users/Satis/projects/Most_Subscribed_YT_Channels/youtube.csv")
+
+# Transforming the data and creating a bar plot
+youtube_data |> 
+# Convert Subscribers to Numeric
+  mutate(SUBSCRIBERS_IN_MILLIONS = parse_number(SUBSCRIBERS)) |>
+# Sort by Subscribers in Descending Order
+  arrange(desc(SUBSCRIBERS_IN_MILLIONS)) |> 
+# Select the Top 10 Channels
+  head(10) |> 
+# Creating Bar Plot
+  ggplot(aes(x = reorder(NAME_OF_CHANNEL, SUBSCRIBERS_IN_MILLIONS), y = SUBSCRIBERS_IN_MILLIONS, fill = NAME_OF_CHANNEL)) +
+# Creating Bars
+  geom_col() +
+# Flipping Coordinates
+  coord_flip() +
+# Minimal Theme
+  theme_minimal() +
+# Labels
+  labs(
+    title = "Top 10 YouTube Channels with the Most Subscribers",
+    subtitle = "The Most Amount of Subscribers from the Top 500 Channel List",
+    caption = "Source: Kaggle - YouTube",
+    y = "Subscribers in Millions",
+    x = "Channel"
+  ) +
+# Removing Legend & Setting Background Black & Setting Text White
+  theme(
+    legend.position = "none",
+    plot.background = element_rect(fill = "black", color = NA),
+    panel.background = element_rect(fill = "black", color = NA),
+    panel.grid.major = element_line(color = "white"),
+    panel.grid.minor = element_line(color = "white"),
+    axis.text = element_text(color = "white"),
+    axis.title = element_text(color = "white"),
+    plot.title = element_text(color = "white", hjust = 0.5),
+    plot.subtitle = element_text(color = "white", hjust = 0.5),
+    plot.caption = element_text(color = "white", hjust = 1)
+  )
+```
